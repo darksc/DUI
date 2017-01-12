@@ -13,14 +13,21 @@
           面板内容
         </div>
       </panel>
+
+      <div>
+
+      </div>
     </div>
   </div>
 </template>
 <style lang="scss">
   .panel-view {
     .section-wrap {
-      height: 500px;
-      position: relative;
+      position: absolute;
+      top: 59px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
     }
   }
 </style>
