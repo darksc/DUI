@@ -1,8 +1,8 @@
 <template lang="html">
   <div id="app">
-    <headers></headers>
-    <navigation></navigation>
     <router-view class="view-wrap"></router-view>
+    <navigation></navigation>
+    <headers></headers>
   </div>
 </template>
 
@@ -24,8 +24,7 @@
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     background: #f5f5f5;
   }
 
@@ -36,6 +35,7 @@
     color: #4a4a4a;
     height: 100%;
     width: 100%;
+    overflow: hidden;
     font-size: 12px;
   }
 
@@ -48,9 +48,25 @@
   .view-wrap {
     position: absolute;
     top: 60px;
-    left: 100px;
+    left: 150px;
     bottom: 0;
     right: 0;
     padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
+
+  .page-wrap {
+    .section-wrap {
+      box-shadow: 0 2px 3px hsla(0,0%,7%,.1), 0 0 0 1px hsla(0,0%,7%,.1);
+      border-radius: 3px;
+      background: #fff;
+      padding: 10px;
+    }
+    h3 {
+      margin: 0 0 20px;
+    }
+  }
+
+
 </style>

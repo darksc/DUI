@@ -1,6 +1,10 @@
 <template lang="html">
-  <div>
-    <h3>简介</h3>
+  <div class="page-wrap">
+    <h3>{{title}}</h3>
+
+    <div class="section-wrap">
+      什么阿兰阿里的说法拉到就
+    </div>
   </div>
 </template>
 <style lang="scss">
@@ -9,7 +13,7 @@
   export default {
     data () {
       return {
-        title: '首页'
+        title: '简介'
       }
     }
   }
