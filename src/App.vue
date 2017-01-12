@@ -1,15 +1,20 @@
 <template lang="html">
   <div id="app">
-    <div class="nav">
-      导航
-    </div>
-    <router-view></router-view>
+    <headers></headers>
+    <navigation></navigation>
+    <router-view class="view-wrap"></router-view>
   </div>
 </template>
 
 <script lang="babel">
+  import navigation from './components/navigation'
+  import headers from './components/headers'
   export default {
-    name: 'app'
+    name: 'app',
+    components: {
+      navigation,
+      headers
+    }
   }
 </script>
 
@@ -21,23 +26,31 @@
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    background: #f5f5f5;
   }
 
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    color: #4a4a4a;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
   }
 
-  .nav {
-    width: 200px;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .view-wrap {
     position: absolute;
-    top: 0;
+    top: 60px;
+    left: 100px;
     bottom: 0;
-    left: 0;
+    right: 0;
+    padding: 20px;
   }
-
 </style>

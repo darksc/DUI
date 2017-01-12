@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1>{{title}}</h1>
+    <h3>简介</h3>
   </div>
 </template>
 <style lang="scss">
