@@ -97,7 +97,7 @@
       getData (val) {
         if (val === '') return
         this.autoChange(val).then(res => {
-          this.autoData = res
+          this.autoData = res.data
           this.inputVal()
         })
       },

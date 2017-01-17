@@ -21,11 +21,13 @@
     methods: {
       textChange (val) {
         let obj = []
+        console.log(val)
         for (let i = 0; i < 5; i++) {
           obj.push({
-            name: 'val' + (i + 1)
+            name: val + (i + 1)
           })
         }
+        console.log(obj)
         return axios.post('http://jsonplaceholder.typicode.com/posts', obj)
       },
       textClick (v) {
