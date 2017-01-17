@@ -6,6 +6,9 @@
         <router-link to="/index">简介</router-link>
       </li>
       <li>
+        <router-link to="/panel">按钮</router-link>
+      </li>
+      <li>
         <router-link to="/panel">面板</router-link>
       </li>
     </ul>
