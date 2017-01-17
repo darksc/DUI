@@ -14,6 +14,9 @@
       <li>
         <router-link to="/panel">面板</router-link>
       </li>
+      <li>
+        <router-link to="/pagination">分页</router-link>
+      </li>
     </ul>
   </div>
 </template>

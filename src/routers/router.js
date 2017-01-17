@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 import index from '../views'
 import panelView from '../views/panelView'
 import autoView from '../views/autoView'
+import paginationView from '../views/paginationView'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,10 @@ const routes = [
   {
     path: '/panel',
     component: panelView
+  },
+  {
+    path: '/pagination',
+    component: paginationView
   },
   {
     path: '*',
