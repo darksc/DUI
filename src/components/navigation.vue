@@ -6,7 +6,10 @@
         <router-link to="/index">简介</router-link>
       </li>
       <li>
-        <router-link to="/panel">按钮</router-link>
+        <router-link to="/button">按钮</router-link>
+      </li>
+      <li>
+        <router-link to="/auto">联想输入</router-link>
       </li>
       <li>
         <router-link to="/panel">面板</router-link>

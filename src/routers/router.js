@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 
 import index from '../views'
 import panelView from '../views/panelView'
+import autoView from '../views/autoView'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,14 @@ const routes = [
   {
     path: '/index',
     component: index
+  },
+  {
+    path: '/button',
+    component: autoView
+  },
+  {
+    path: '/auto',
+    component: autoView
   },
   {
     path: '/panel',
