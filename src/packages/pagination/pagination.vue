@@ -2,11 +2,11 @@
   <ul class="pagination">
     <!--首页-->
     <li class="pagination-first">
-      <span @click="first()" class="iconfont icon-shouye" :class="{'pagination-disabled': selfCurrentPage === 1}"></span>
+      <span @click="first()" class="d-icon" :class="{'pagination-disabled': selfCurrentPage === 1}">&#xE87C;</span>
     </li>
     <!--上一页-->
     <li class="pagination-prev">
-      <span @click="prev()" class="iconfont icon-shangyiye" :class="{'pagination-disabled': selfCurrentPage === 1}"></span>
+      <span @click="prev()" class="d-icon" :class="{'pagination-disabled': selfCurrentPage === 1}">&#xE87C;</span>
     </li>
     <!--分页页码-->
     <li v-for="p in pagesLength" v-if="index * pagesLength + p <= pages">
@@ -20,11 +20,11 @@
     </li>
     <!--尾页-->
     <li class="pagination-last">
-      <span @click="last()" class="iconfont icon-weiye" :class="{'pagination-disabled': selfCurrentPage === pages}"></span>
+      <span @click="last()" class="d-icon" :class="{'pagination-disabled': selfCurrentPage === pages}">&#xE87C;</span>
     </li>
     <!--下一页-->
     <li class="pagination-next">
-      <span @click="next()" class="iconfont icon-xiayiye" :class="{'pagination-disabled': selfCurrentPage === pages}"></span>
+      <span @click="next()" class="d-icon" :class="{'pagination-disabled': selfCurrentPage === pages}">&#xE87C;</span>
     </li>
   </ul>
 </template>
